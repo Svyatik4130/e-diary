@@ -15,8 +15,8 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
     if (err) throw err;
     console.log("MONGODB CONNECTED")
 })
-app.use(express.static("front"))
-// app.use("/users", require("./routes/userRouter"))
+// app.use(express.static("front"))
+app.use("/users", require("./routes/userRoutes"))
 // app.use("/points", require("./routes/pointRouter"))
 
 if (process.env.NODE_ENV === "production") {

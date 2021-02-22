@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #121317;
+  /* #2c6e41 */
+}
+.Sidebar{
+  float:left;
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  background-color: #1a1c23;
+  padding: 10px;
+}
+h1, h2, h3, h4, h5, h6, p{
+  color: #e5e7eb;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*
+ * We'll use CSS grids for the base template
+ * More info on https://cssgrid.io/ by @wesbos
+ */
+ #main {
+  display: grid;
+  grid-template-columns: 6rem auto;
+  /* Or grid-template-columns: config('width.24') auto; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (min-width: 1200px) { 
+/* Or @media (min-width: config('screens.xl')) { */
+  
+  #main { grid-template-columns: 12rem auto; }
+  /* Or #main { grid-template-columns: config('width.48') auto; } */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
+  /* Or @apply .no-underline; */
 }
 
-.App-link {
-  color: #61dafb;
+/* Just a new padding size */
+.pt-16 {
+  padding-top: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*
+ * Just some customized new utilities needed for the submenus
+ * Add this before
+ */
+.top-full { top: 100%; }
+.left-full { left: 100%; }
+
+/*
+ * This hacks is just needed in Codepen because the previous rules are prioritary to xl:pin-none.
+ * In your own config this should not be needed.
+ */
+
+@media (min-width: 1200px) {
+  .xl\:pin-none { left: auto; }
+}
+
+/* 
+ * Active "group-hover" for the "display" module in your
+ * tailwind.js config file like this:
+ * 
+ * display: ['responsive', 'group-hover']
+ *
+ * More info on https://tailwindcss.com/docs/state-variants/#group-hover
+ */
+.group:hover .group-hover\:block {
+  display: block;
 }

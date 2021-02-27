@@ -1,9 +1,15 @@
 module.exports = {
-    purge: [],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {},
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      fontFamily: {
+        mont: ["Montserrat"]
+      }
     },
-    variants: {},
-    plugins: [],
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }

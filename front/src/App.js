@@ -1,14 +1,16 @@
-import './App.css';
 import "tailwindcss/tailwind.css"
 
 
 import Sidebar from "./components/layout/Sidebar"
+import Main from './components/layout/Main'
 
 function App() {
   return (
     <div className="App">
-      <Sidebar/>
-      Hello
+      <div className="flex flex-1">
+        <Sidebar />
+        <Main/>
+      </div>
     </div>
   );
 }

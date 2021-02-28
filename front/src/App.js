@@ -6,8 +6,8 @@ import Main from './components/layout/Main'
 
 function App() {
   return (
-    <div className="App bg-gray-100">
-      <div className="font-mont grid gap-1 grid-cols-6">
+    <div className="App bg-indigo-450">
+      <div className="font-mont grid grid-cols-6">
         <Sidebar />
         <Main/>
       </div>

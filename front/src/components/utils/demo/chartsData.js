@@ -27,7 +27,7 @@ export const doughnutOptions = {
         label: 'Dataset 1',
       },
     ],
-    labels: ['Shoes', 'Shirts', 'Bags'],
+    labels: ['6-9', '10-12', '1-5'],
   },
   options: {
     responsive: true,

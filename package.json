@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "concurrently -c \"bgBlue.bold,bgMagenta.bold\" \"nodemon server.js\" \"cd front && npm start\""
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Svyatik4130/e-diary#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "concurrently": "^6.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",

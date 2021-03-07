@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TopBar from './TopBar'
+import TopBar from '../layout/TopBar'
 import Dashboard from './Dashboard'
 
 export default function Main() {

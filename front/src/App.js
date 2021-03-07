@@ -2,7 +2,7 @@ import "tailwindcss/tailwind.css"
 
 
 import Sidebar from "./components/layout/Sidebar"
-import Main from './components/layout/Main'
+import Main from './components/pages/Main'
 
 function App() {
   return (

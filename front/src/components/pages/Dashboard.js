@@ -23,7 +23,7 @@ export default function Dashboard() {
                         <p> ReactJS MongoDB NodeJS Express is the best bundle in the world for todayReactJS MongoDB NodeJS Express is the best bundle in the world for today</p>
                     </div>
                     <div className="col-span-2">
-                        <img className="h-full w-full" src="images/Richie_4.png" alt="PlacePhoto" />
+                        <img className="h-full w-full" src="/images/Richie_4.png" alt="PlacePhoto" />
                     </div>
                 </div>
                 <div className="col-span-2">
@@ -48,7 +48,7 @@ export default function Dashboard() {
                         <p> ReactJS MongoDB NodeJS Express is the best bundle in the world for todayReactJS MongoDB NodeJS Express is the best bundle in the world for today</p>
                     </div>
                     <div className="col-span-2">
-                        <img className="h-full w-full" src="images/Richie_4.png" alt="PlacePhoto" />
+                        <img className="h-full w-full" src="/images/Richie_4.png" alt="PlacePhoto" />
                     </div>
                 </div>
             </div>

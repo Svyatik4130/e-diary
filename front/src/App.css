@@ -5,5 +5,22 @@
 @tailwind utilities;
 
 body{
-    background-color: #8F86F0;
+    background-color: rgb(243, 244, 246);
+}
+
+.outActive{
+    transition: 1.4s;
+    @apply animate-activeurlout;
+}
+.outActive-child{
+    transition: 1.4s;
+    @apply animate-activeurlouttext;
+}
+.inActive{
+    transition: 1.4s;
+    @apply animate-activeurlin;
+}
+.inActive-child{
+    transition: 1.4s;
+    @apply animate-activeurlintext;
 }
